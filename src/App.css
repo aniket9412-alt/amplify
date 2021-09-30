@@ -1,0 +1,260 @@
+/* * {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 680px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.0);
+}
+
+.messages {
+  flex: 1;
+  position: relative;
+}
+
+.messages-scroller {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow-y: scroll;
+}
+
+.message {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 8px 12px;
+  max-width: 240px;
+  background: #f1f0f0;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.message.me {
+  align-self: flex-end;
+  background: #f19e38;
+  color: white;
+}
+
+.chat-bar {
+  height: 64px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-bar form {
+  height: 100%;
+  padding: 16px;
+}
+
+.chat-bar form input {
+  width: 100%;
+  height: 32px;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  outline: none;
+}
+
+.chat-bar form input:focus {
+  border: 1px solid #f19e38;
+} */
+
+/****** Chat Popup Layout ******/
+body{
+  background: #e5e5e5;  
+  font-family: sans-serif;
+}
+
+.msg_box{
+  position: fixed;
+  bottom: 0px;
+  /* height: 350px; */
+  width: 300px;
+  background: white;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.msg_head{  
+  background: rgb(189, 194, 192);
+  color: black;
+  height: 3rem;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding-top: 6%;
+  padding-bottom: 6%; */
+  font-weight: bold;
+  /* cursor: pointer; */
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+/* .close {
+  display: inline-block;
+  color: yellow !important;
+  justify-content: right;
+} */
+
+.one,
+.two,
+.three,
+.four{
+display: inline-block;
+}
+.one {
+margin-left: 0.5rem;
+}
+.two {
+flex: 1;
+text-align: left;
+margin-left: 1rem;
+color: black;
+}
+.four {
+margin-right: 15px;
+}
+.three {
+margin-right: 15px;
+}
+.closeIcon,
+.calender {
+cursor: pointer;
+}
+.msg_body{
+  background: white;
+  height: 300px;
+  font-size: 12px;
+  padding: 15px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* .close{
+  float: right;
+  cursor: pointer;
+}
+ */
+/* .minimize{
+  float: right;
+  cursor: pointer;
+  padding-right: 5px;
+} */
+
+/****** Slider Layout Popup ******/
+.chat-sidebar {
+  width: 250px;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #b2b2b2;
+}
+
+/* .modal-body {
+  display: flex;
+    float: right;
+  margin-left: 10px;
+} */
+/* .inner {
+  display: inline;
+}
+*/
+/* .paraDiv {
+  width: 100%;
+} */
+
+.text {
+  float: left;
+  font-size: small;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #ff3396;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  /* overflow: hidden; */
+  width: 74%;
+  overflow-wrap: break-word !important;
+  text-align: justify;
+  /* padding-left: 2px; */
+  /* float: left; */
+  /* border-radius: 10px; */
+  /* text-align: left; */
+  padding-left: 6px; 
+  padding-right: 6%;
+}
+.textRight {
+float: right;
+font-size: small;
+padding-top: 8px;
+padding-bottom: 8px;
+background-color: #DAF7A6 ;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+border-top-left-radius: 10px;
+/* overflow: hidden; */
+width: 79%;
+overflow-wrap: break-word !important;
+text-align: justify;
+/* padding-left: 2px; */
+padding-left: 6px;
+/* float: left; */
+/* border-radius: 10px; */
+/* text-align: left;
+padding-left: 6px; */
+}
+/* .inputField {
+text-align: left;
+  clear: both;
+  float:left;
+  margin-right:0px;
+} */
+
+/* .msgBtm {
+    display: flex;
+} */
+
+.inputGroup {
+display: flex;
+/* justify-content: space-around; */
+}
+.formControl {
+border: none;
+margin-left: 1rem;
+width: 65%;
+height: auto;
+/* background-color: lightyellow; */
+padding-top: 3%;
+padding-bottom: 3%;
+font-size: 1rem;
+border-radius: 6px;
+}
+.emoji, .send {
+margin-left: 0.5rem;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
